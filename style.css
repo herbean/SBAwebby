@@ -5,6 +5,11 @@
     font-family: montserrat medium;
 }
 
+.wrapper-main{
+    width: 1300px;
+    margin: 0 auto;
+}
+
 :root{
     /* colors */
 --white-color: #fff;
@@ -137,6 +142,9 @@ header .navbar{
     color: var(--primary-color);
 }
 
+.navbar :where(#menu-close-button, #menu-open-button) {
+    display: none;
+}
  /* Home section styling*/
 .home-section{
     background: var(--primary-color);
@@ -201,39 +209,6 @@ margin: 24px 0 40px;
     margin-right: 150px; 
 }
 
-@media screen and (max-width: 900px) {
-    .navbar .nav-menu{ 
-        display: block;
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 300px;
-        height: 100px;
-        background: var(--white-color)
-    }
-}
-
-.home-section .section-content {
-    flex-direction: column-reverse;
-    justify-content: center;
-    gap: 50px;
-    text-align: center;
-    padding: 30px 20px 20px;
-}
-
-.home-direction .home-image-wrapper {
-    max-width: 270px;
-    margin-right: 0;
-}
-
-.home-section .home-details :is(.subtitles, .description){
-    max-width: 100%;
-}
-
-.home-section .home-details .buttons {
-    justify-content: center;
-    
-}
 
 
  /*About us styling */
@@ -275,12 +250,12 @@ border-radius: var(--border-radius-circle);
 
  .section-text {
     text-align: center ;
-    position: relative;
-    top: -50px;
+    margin-bottom: 50px;
     font-family: stencil regular;
     color: blanchedalmond;
     font-size: 20px;
  }
+
 
  .product-section .product-list {
     display: flex;
@@ -310,6 +285,12 @@ border-radius: var(--border-radius-circle);
     margin: 12px 0 ;
     font-size: var(--font-size-l);
     font-weight: var(--font-weight-semibold);
+    font-family: Simplex regular;
+ }
+
+ .product-section .product-list .product-item .text {
+    font-size: var(--font-size-m);
+    font-family: Algerian regular;
  }
 
  
@@ -430,3 +411,4 @@ border-radius: var(--border-radius-circle);
     max-width: 50%;
  }
 
+ 
